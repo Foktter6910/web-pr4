@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Інтерактивні елементи</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="dropdown-menu">
+            <button class="menu-toggle">Меню ▼</button>
+            <ul class="menu-list">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <button id="openModal">Відкрити модальне вікно</button>
+
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <span id="closeModal" class="close-btn">&times;</span>
+                <h2>Модальне вікно</h2>
+                <p>Це спливаюче вікно з повідомленням.</p>
+            </div>
+        </div>
+
+        <section class="feedback-form">
+            <h2>Форма зворотного зв'язку</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Ім’я" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <textarea id="message" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit">Надіслати</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+
+        <section class="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery-images">
+                <img src="tea.png" alt="Image 1">
+                <img src="cat-logo.jpg" alt="Image 2">
+                <img src="cat.jpg" alt="Image 3">
+            </div>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn">⬆ Вгору</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
